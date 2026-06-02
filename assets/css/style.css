@@ -2629,3 +2629,50 @@ footer {
   }
 
 }
+
+
+/* Mobile Category Item Fix */
+@media (max-width: 570px) {
+  .category-item {
+    min-width: calc(50% - 15px) !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+  }
+  .category-img-box {
+    padding: 6px !important;
+    width: 36px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+  .category-img-box img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+  .category-content-flex {
+    flex-direction: column !important;
+    gap: 2px !important;
+    justify-content: center !important;
+    margin-bottom: 2px !important;
+  }
+  .category-item-title {
+    font-size: 11px !important;
+    letter-spacing: 0 !important;
+  }
+  .category-item-amount {
+    font-size: 10px !important;
+  }
+  .category-btn {
+    font-size: 10px !important;
+    padding: 2px 0 !important;
+  }
+  .category-item-container {
+    gap: 12px !important;
+  }
+}
+/* End Mobile Category Item Fix */
