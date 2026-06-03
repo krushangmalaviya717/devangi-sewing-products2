@@ -33,6 +33,13 @@ transporter.verify(function(error, success) {
   }
 });
 
+const dns = require("dns");
+
+dns.lookup("smtp.gmail.com", (err, address) => {
+  console.log("DNS Test:");
+  console.log(err || address);
+});
+
 const app = express();
 const port = 3000;
 
