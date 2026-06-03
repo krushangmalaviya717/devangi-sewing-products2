@@ -430,6 +430,11 @@ app.get("/test", (req, res) => {
   res.send("Server working");
 });
 
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
+
+
 // ===== STORE SETTINGS API =====
 
 // Public: Get all settings as key-value object
